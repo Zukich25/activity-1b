@@ -3,12 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Our First Web</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+            background-image: url('image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+        header, footer {
+            background-color: rgba(51, 57, 63, 0.9); /* Slightly darker for contrast */
+            color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-bottom: 3px solid #ecf0f1;
+        }
+        h1, h2 {
+            font-weight: 600;
+        }
+        main {
+            padding: 40px 20px;
+        }
+        .section {
+            background-color: rgba(51, 57, 63, 0.8);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            color: rgba(255, 255, 255, 0.85);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .circle {
+            width: 120px;
+            height: 120px;
+            background-color: #566168;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .circle:hover {
+            transform: scale(1.2);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .box {
+            width: 220px;
+            height: 110px;
+            background-color: #566168;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        footer h2 {
+            margin-bottom: 10px;
+        }
+        footer p {
+            font-size: 0.9rem;
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
-    <p>
-        My first project
-    </p>
-    
+    <header>
+        <h1>Welcome to our first web dev</h1>
+    </header>
+    <main>
+        <div class="section">
+            <h2>About Us</h2>
+            <p>This is our first web dev project.</p>
+        </div>
+        <div class="section">
+            <h2>Our Project is</h2>
+            <p>To reach mythical honor.</p>
+        </div>
+        <div class="section">   
+            <h2>This is just an example sa projecct namo</h2>
+            <p>Feel free to ask questions, sir hehe.</p>
+        </div>
+        
+        <div class="container">
+            <div class="circle">Taneo</div>
+            <div class="circle">Cabansay</div>
+            <div class="circle">Unknown</div>
+        </div>
+        
+        <div class="container">
+            <div class="box">Taneo - Professional ML Player</div>
+            <div class="box">Cabansay - Professional Rizz God</div>
+            <div class="box">Unknown</div>
+        </div>
+    </main>
+    <footer>
+        <h2>If ganahan ka sa pormal text us</h2>
+        <p>Email: taneo@cute.com | Phone: (123) 456-7890</p>
+    </footer>
 </body>
 </html>
